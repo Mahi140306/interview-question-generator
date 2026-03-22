@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📊 Performance Dashboard</h1>
+
+    <h2>Average Score: {{ avg_score }}%</h2>
+
+    {% for r in results %}
+        <div class="card">
+            <p><b>Q:</b> {{ r.question }}</p>
+            <p><b>Your Answer:</b> {{ r.answer }}</p>
+            <p><b>Score:</b> {{ r.score }}%</p>
+        </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>

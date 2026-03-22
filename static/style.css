@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Segoe UI';
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.glass {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.card {
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #00c6ff;
+    border: none;
+    border-radius: 8px;
+}
